@@ -15,7 +15,7 @@ const content = {
   footer: 'IEER - Instalações Elétricas e Energias Renováveis',
   highlights: [
     'Mais segurança elétrica para residências e negócios.',
-    'Menor desperdício de energia e melhor eficiência no consumo.',
+    'Menor desperdício de energia e maior eficiência no consumo.',
     'Acompanhamento técnico para evitar falhas e paragens.',
   ],
   services: [
@@ -65,7 +65,7 @@ const content = {
     },
     {
       title: '3. Execução e testes',
-      text: 'Implementamos o serviço com validação técnica, para garantir segurança e desempenho.',
+      text: 'Implementamos o serviço com validação técnica para garantir segurança e desempenho.',
     },
     {
       title: '4. Entrega e acompanhamento',
