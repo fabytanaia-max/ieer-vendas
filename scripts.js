@@ -1,89 +1,89 @@
 ﻿/* global document */
 const content = {
   brand: 'IEER',
-  badge: 'Instalacoes Eletricas e Energias Renovaveis',
-  headline: 'A energia certa para proteger o seu espaco e reduzir custos.',
+  badge: 'Instalações Elétricas e Energias Renováveis',
+  headline: 'A energia certa para proteger o seu espaço e reduzir custos.',
   subheadline:
-    'Com a IEER, voce tem instalacoes eletricas seguras, energia renovavel bem dimensionada e execucao profissional do inicio ao fim.',
-  primaryCta: 'Quero um orcamento tecnico',
-  finalCtaTitle: 'Vamos desenhar a melhor solucao para o seu caso?',
-  finalCtaText: 'Receba uma proposta clara com escopo, prazo e investimento, sem surpresas.',
+    'Com a IEER, você tem instalações elétricas seguras, energia renovável bem dimensionada e execução profissional do início ao fim.',
+  primaryCta: 'Quero um orçamento técnico',
+  finalCtaTitle: 'Vamos desenhar a melhor solução para o seu caso?',
+  finalCtaText: 'Receba uma proposta clara, com escopo, prazo e investimento, sem surpresas.',
   contactCta: 'Falar com a IEER no WhatsApp',
   contactLine: 'Sr. Atlano - Atendimento direto: +238 981 26 46',
   whatsappNumber: '2389812646',
-  whatsappMessage: 'Ola Sr. Atlano, gostaria de pedir um orcamento tecnico da IEER.',
-  footer: 'IEER - Instalacoes Eletricas e Energias Renovaveis',
+  whatsappMessage: 'Olá, Sr. Atlano. Gostaria de pedir um orçamento técnico da IEER.',
+  footer: 'IEER - Instalações Elétricas e Energias Renováveis',
   highlights: [
-    'Mais seguranca eletrica para residencias e negocios.',
-    'Menor desperdicio de energia e melhor eficiencia no consumo.',
-    'Acompanhamento tecnico para evitar falhas e paragens.',
+    'Mais segurança elétrica para residências e negócios.',
+    'Menor desperdício de energia e melhor eficiência no consumo.',
+    'Acompanhamento técnico para evitar falhas e paragens.',
   ],
   services: [
     {
-      title: 'Instalacoes eletricas residenciais',
-      text: 'Montagem, renovacao e organizacao de circuitos para dar seguranca e estabilidade no dia a dia.',
+      title: 'Instalações elétricas residenciais',
+      text: 'Montagem, renovação e organização de circuitos para garantir segurança e estabilidade no dia a dia.',
     },
     {
-      title: 'Instalacoes comerciais',
-      text: 'Solucoes para lojas e empresas com infraestrutura preparada para crescimento da operacao.',
+      title: 'Instalações comerciais',
+      text: 'Soluções para lojas e empresas, com infraestrutura preparada para o crescimento da operação.',
     },
     {
       title: 'Energia solar fotovoltaica',
-      text: 'Projeto e implementacao com foco em retorno financeiro e autonomia energetica.',
+      text: 'Projeto e implementação com foco em retorno financeiro e autonomia energética.',
     },
     {
-      title: 'Manutencao e diagnostico',
-      text: 'Inspecao tecnica, identificacao de riscos e plano de acao para evitar avarias recorrentes.',
+      title: 'Manutenção e diagnóstico',
+      text: 'Inspeção técnica, identificação de riscos e plano de ação para evitar avarias recorrentes.',
     },
   ],
   benefits: [
     {
-      title: 'Execucao com criterio tecnico',
-      text: 'Cada intervencao segue uma logica de seguranca, desempenho e durabilidade.',
+      title: 'Execução com critério técnico',
+      text: 'Cada intervenção segue uma lógica de segurança, desempenho e durabilidade.',
     },
     {
-      title: 'Orcamento transparente',
-      text: 'Voce sabe antecipadamente o que sera feito, quanto custa e quanto tempo leva.',
+      title: 'Orçamento transparente',
+      text: 'Você sabe, antecipadamente, o que será feito, quanto custa e quanto tempo leva.',
     },
     {
-      title: 'Eficiência com foco em poupanca',
-      text: 'As solucoes sao pensadas para reduzir consumo sem comprometer conforto e operacao.',
+      title: 'Eficiência com foco em poupança',
+      text: 'As soluções são pensadas para reduzir consumo, sem comprometer conforto e operação.',
     },
     {
-      title: 'Suporte apos entrega',
-      text: 'A IEER acompanha o pos-servico para garantir funcionamento confiavel.',
+      title: 'Suporte após a entrega',
+      text: 'A IEER acompanha o pós-serviço para garantir funcionamento confiável.',
     },
   ],
   steps: [
     {
-      title: '1. Visita e diagnostico',
+      title: '1. Visita e diagnóstico',
       text: 'Levantamos as necessidades reais do local e os pontos de risco ou melhoria.',
     },
     {
-      title: '2. Proposta tecnica',
-      text: 'Apresentamos solucao recomendada com materiais, prazo de execucao e investimento.',
+      title: '2. Proposta técnica',
+      text: 'Apresentamos a solução recomendada, com materiais, prazo de execução e investimento.',
     },
     {
-      title: '3. Execucao e testes',
-      text: 'Implementamos o servico com validacao tecnica para garantir seguranca e desempenho.',
+      title: '3. Execução e testes',
+      text: 'Implementamos o serviço com validação técnica, para garantir segurança e desempenho.',
     },
     {
       title: '4. Entrega e acompanhamento',
-      text: 'Entregamos com orientacao pratica e suporte para manter o sistema estavel.',
+      text: 'Entregamos com orientação prática e suporte para manter o sistema estável.',
     },
   ],
   projects: [
     {
-      title: 'Requalificacao eletrica residencial',
-      text: 'Atualizacao completa para reduzir riscos, melhorar distribuicao e suportar novos equipamentos.',
+      title: 'Requalificação elétrica residencial',
+      text: 'Atualização completa para reduzir riscos, melhorar a distribuição e suportar novos equipamentos.',
     },
     {
-      title: 'Adequacao eletrica de espaco comercial',
-      text: 'Reforco de capacidade e organizacao tecnica para operar sem interrupcoes por sobrecarga.',
+      title: 'Adequação elétrica de espaço comercial',
+      text: 'Reforço de capacidade e organização técnica para operar sem interrupções por sobrecarga.',
     },
     {
-      title: 'Implementacao de energia solar',
-      text: 'Sistema pensado para reduzir a fatura mensal e aumentar previsibilidade de custos.',
+      title: 'Implementação de energia solar',
+      text: 'Sistema pensado para reduzir a fatura mensal e aumentar a previsibilidade de custos.',
     },
   ],
 };
