@@ -1,25 +1,20 @@
 ﻿/* global document */
 const content = {
   brand: 'IEER',
-  badge: 'Instalações elétricas e energias renováveis',
-  headline: 'Excelência técnica em diagnóstico, execução e manutenção elétrica.',
+  badge: 'Engenharia elétrica e energia solar',
+  headline: 'Infraestrutura elétrica para operações que não podem parar.',
   subheadline:
-    'A IEER atua em Cabo Verde com intervenções técnicas para residências e empresas, com foco em segurança, estabilidade e eficiência energética.',
-  primaryCta: 'Agendar reunião de 15 minutos',
+    'A IEER atua em Cabo Verde com diagnóstico, execução e manutenção técnica para residências e empresas, com foco em segurança e desempenho energético.',
+  primaryCta: 'Solicitar avaliação técnica',
   finalCtaTitle: 'Vamos fechar os próximos passos do seu projeto em 15 minutos?',
   finalCtaText: 'Fale connosco no WhatsApp e receba direção técnica para decidir com segurança.',
-  contactCta: 'Agendar reunião com a IEER',
+  contactCta: 'Solicitar avaliação com a IEER',
   contactLine: 'Sr. Atlano - Atendimento directo: +238 981 26 46',
   phoneNumber: '+2389812646',
   whatsappNumber: '2389812646',
   whatsappMessage:
-    'Olá, Sr. Atlano. Pretendo agendar uma reunião de 15 minutos para avaliar o meu projeto elétrico.',
+    'Olá, Sr. Atlano. Pretendo solicitar uma avaliação técnica para o meu projeto elétrico.',
   footer: 'IEER - Instalações Elétricas e Energias Renováveis',
-  highlights: [
-    'Diagnóstico orientado por prioridade técnica e risco real.',
-    'Proposta executável com âmbito, prazo e investimento definidos.',
-    'Execução acompanhada até validação final da intervenção.',
-  ],
   problems: [
     {
       title: 'Quebras de energia e interrupções',
@@ -66,20 +61,6 @@ const content = {
       text: 'Proposta formal com âmbito, prazo e investimento definidos antes da execução.',
     },
   ],
-  coverage: [
-    {
-      title: 'Atendimento local em Cabo Verde',
-      text: 'Projetos residenciais, comerciais e de eficiência energética, conforme viabilidade técnica.',
-    },
-    {
-      title: 'Escopo atendido',
-      text: 'Diagnóstico, adequação elétrica, manutenção técnica e soluções de energia renovável.',
-    },
-    {
-      title: 'Escopo fora de prioridade',
-      text: 'Projetos fora da zona de atendimento imediato são avaliados mediante agenda técnica.',
-    },
-  ],
   steps: [
     {
       title: '1. Reunião curta (15 min)',
@@ -106,20 +87,6 @@ const content = {
     {
       title: 'Projeto de eficiência energética',
       text: 'Intervenção orientada para reduzir desperdício e melhorar previsibilidade de custos energéticos.',
-    },
-  ],
-  offer: [
-    {
-      title: 'Diagnóstico inicial',
-      text: 'Levantamento técnico dos riscos e prioridades no local.',
-    },
-    {
-      title: 'Plano de ação',
-      text: 'Recebe direção objectiva: o que fazer primeiro e com qual impacto esperado.',
-    },
-    {
-      title: 'Próximo passo claro',
-      text: 'Após o diagnóstico, a execução é alinhada com âmbito, prazo e investimento definidos.',
     },
   ],
   faq: [
@@ -162,17 +129,6 @@ const content = {
 function setText(key, value) {
   const el = document.querySelector(`[data-text="${key}"]`);
   if (el) el.textContent = value;
-}
-
-function renderList(id, items) {
-  const root = document.getElementById(id);
-  if (!root) return;
-  root.innerHTML = '';
-  items.forEach((item) => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    root.appendChild(li);
-  });
 }
 
 function renderCards(id, items) {
@@ -228,29 +184,6 @@ function renderFaq() {
       </div>
     `;
     root.appendChild(row);
-  });
-}
-
-function setupLeadForm() {
-  const form = document.getElementById('lead-form');
-  if (!form) return;
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const name = document.getElementById('lead-name')?.value?.trim() || '';
-    const phone = document.getElementById('lead-phone')?.value?.trim() || '';
-    const need = document.getElementById('lead-need')?.value?.trim() || '';
-
-    const message = [
-      'Olá, Sr. Atlano.',
-      'Quero pedir um diagnóstico inicial com a IEER.',
-      `Nome: ${name}`,
-      `Telefone: ${phone}`,
-      `Necessidade: ${need}`,
-    ].join('\n');
-
-    const url = `https://wa.me/${content.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
   });
 }
 
@@ -351,18 +284,14 @@ function init() {
   const callLink = document.getElementById('call-link');
   if (callLink) callLink.setAttribute('href', `tel:${content.phoneNumber}`);
 
-  renderList('hero-highlights', content.highlights);
   renderCards('problems-list', content.problems);
   renderCards('solutions-list', content.solutions);
   renderCards('credentials-list', content.credentials);
-  renderCards('coverage-list', content.coverage);
   renderCards('proof-list', content.proof);
-  renderCards('offer-list', content.offer);
   renderCards('work-gallery', content.workGallery);
   enableHorizontalDrag('work-gallery');
   renderSteps();
   renderFaq();
-  setupLeadForm();
 }
 
 document.addEventListener('DOMContentLoaded', init);
