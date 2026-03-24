@@ -1,11 +1,11 @@
-﻿/* global document */
+/* global document */
 const content = {
   brand: 'IEER',
-  badge: 'Engenharia elétrica e energia solar',
-  headline: 'Infraestrutura elétrica para operações que não podem parar.',
+  badge: 'Instalações elétricas e energias renováveis',
+  headline: 'Projetamos, instalamos e corrigimos sistemas elétricos e de energias renováveis em Cabo Verde.',
   subheadline:
-    'A IEER atua em Cabo Verde com diagnóstico, execução e manutenção técnica para residências e empresas, com foco em segurança e desempenho energético.',
-  primaryCta: 'Solicitar avaliação técnica',
+    'Para residências e empresas que precisam de segurança elétrica, menos falhas e menor custo de energia.',
+  primaryCta: 'Pedir diagnóstico técnico no WhatsApp',
   finalCtaTitle: 'Vamos fechar os próximos passos do seu projeto em 15 minutos?',
   finalCtaText: 'Fale connosco no WhatsApp e receba direção técnica para decidir com segurança.',
   contactCta: 'Solicitar avaliação com a IEER',
@@ -47,20 +47,6 @@ const content = {
       text: 'Acompanhamento pós-serviço para reduzir novas paragens e manter a operação estável.',
     },
   ],
-  credentials: [
-    {
-      title: 'Diagnóstico e validação técnica',
-      text: 'Cada intervenção parte de diagnóstico objectivo, com validação final após execução.',
-    },
-    {
-      title: 'Critério de segurança elétrica',
-      text: 'Prioridade total para reduzir risco operacional, sobrecarga e avarias recorrentes.',
-    },
-    {
-      title: 'Escopo e investimento transparentes',
-      text: 'Proposta formal com âmbito, prazo e investimento definidos antes da execução.',
-    },
-  ],
   steps: [
     {
       title: '1. Reunião curta (15 min)',
@@ -75,54 +61,26 @@ const content = {
       text: 'Implementamos e validamos para entregar segurança elétrica e previsibilidade.',
     },
   ],
-  proof: [
-    {
-      title: 'Requalificação elétrica residencial',
-      text: 'Atualização de quadro e reorganização de circuitos para aumentar segurança e estabilidade diária.',
-    },
-    {
-      title: 'Adequação elétrica de espaço comercial',
-      text: 'Correção de sobrecargas e reforço técnico para reduzir interrupções e proteger equipamentos.',
-    },
-    {
-      title: 'Projeto de eficiência energética',
-      text: 'Intervenção orientada para reduzir desperdício e melhorar previsibilidade de custos energéticos.',
-    },
-  ],
-  faq: [
-    {
-      title: 'Quanto tempo demora para começar?',
-      text: 'Após a reunião inicial e validação do âmbito, o início depende da agenda técnica e da prioridade do risco.',
-    },
-    {
-      title: 'Vocês atendem urgência?',
-      text: 'Sim. Casos com risco elétrico ou interrupção de operação entram como prioridade de avaliação.',
-    },
-    {
-      title: 'Como é definido o investimento?',
-      text: 'Com base no diagnóstico técnico, materiais necessários, complexidade e prazo de execução.',
-    },
-  ],
   workGallery: [
-    { title: 'Trabalho IEER 01', image: 'assets/trabalhos/trabalho-01.webp' },
-    { title: 'Trabalho IEER 02', image: 'assets/trabalhos/trabalho-02.webp' },
-    { title: 'Trabalho IEER 03', image: 'assets/trabalhos/trabalho-03.webp' },
-    { title: 'Trabalho IEER 04', image: 'assets/trabalhos/trabalho-04.webp' },
-    { title: 'Trabalho IEER 05', image: 'assets/trabalhos/trabalho-05.webp' },
-    { title: 'Trabalho IEER 06', image: 'assets/trabalhos/trabalho-06.webp' },
-    { title: 'Trabalho IEER 07', image: 'assets/trabalhos/trabalho-07.webp' },
-    { title: 'Trabalho IEER 08', image: 'assets/trabalhos/trabalho-08.webp' },
-    { title: 'Trabalho IEER 09', image: 'assets/trabalhos/trabalho-09.webp' },
-    { title: 'Trabalho IEER 10', image: 'assets/trabalhos/trabalho-10.webp' },
-    { title: 'Trabalho IEER 11', image: 'assets/trabalhos/trabalho-11.webp' },
-    { title: 'Trabalho IEER 12', image: 'assets/trabalhos/trabalho-12.webp' },
-    { title: 'Trabalho IEER 13', image: 'assets/trabalhos/trabalho-13.webp' },
-    { title: 'Trabalho IEER 14', image: 'assets/trabalhos/trabalho-14.webp' },
-    { title: 'Trabalho IEER 15', image: 'assets/trabalhos/trabalho-15.webp' },
-    { title: 'Trabalho IEER 16', image: 'assets/trabalhos/trabalho-16.webp' },
-    { title: 'Trabalho IEER 17', image: 'assets/trabalhos/trabalho-17.webp' },
-    { title: 'Trabalho IEER 18', image: 'assets/trabalhos/trabalho-18.webp' },
-    { title: 'Trabalho IEER 19', image: 'assets/trabalhos/trabalho-19.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-01.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-02.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-03.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-04.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-05.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-06.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-07.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-08.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-09.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-10.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-11.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-12.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-13.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-14.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-15.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-16.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-17.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-18.webp' },
+    { alt: 'Registo de trabalho IEER', image: 'assets/trabalhos/trabalho-19.webp' },
   ],
 };
 
@@ -139,11 +97,14 @@ function renderCards(id, items) {
   items.forEach((item) => {
     const card = document.createElement('article');
     card.className = 'card';
+    const isGallery = id === 'work-gallery';
+    const altText = item.alt || item.title || 'Registo de trabalho IEER';
     const image = item.image
-      ? `<img class="card-media" src="${item.image}" alt="${item.title}" loading="lazy" />`
+      ? `<img class="card-media" src="${item.image}" alt="${altText}" loading="lazy" />`
       : '';
-    const text = item.text ? `<p>${item.text}</p>` : '';
-    card.innerHTML = `${image}<h3>${item.title}</h3>${text}`;
+    const title = !isGallery && item.title ? `<h3>${item.title}</h3>` : '';
+    const text = !isGallery && item.text ? `<p>${item.text}</p>` : '';
+    card.innerHTML = `${image}${title}${text}`;
     fragment.appendChild(card);
   });
   root.appendChild(fragment);
@@ -162,25 +123,6 @@ function renderSteps() {
       <div>
         <h3>${step.title}</h3>
         <p>${step.text}</p>
-      </div>
-    `;
-    root.appendChild(row);
-  });
-}
-
-function renderFaq() {
-  const root = document.getElementById('faq-list');
-  if (!root) return;
-  root.innerHTML = '';
-
-  content.faq.forEach((item, index) => {
-    const row = document.createElement('article');
-    row.className = 'step';
-    row.innerHTML = `
-      <div class="step-index">${index + 1}</div>
-      <div>
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
       </div>
     `;
     root.appendChild(row);
@@ -286,12 +228,9 @@ function init() {
 
   renderCards('problems-list', content.problems);
   renderCards('solutions-list', content.solutions);
-  renderCards('credentials-list', content.credentials);
-  renderCards('proof-list', content.proof);
   renderCards('work-gallery', content.workGallery);
   enableHorizontalDrag('work-gallery');
   renderSteps();
-  renderFaq();
 }
 
 document.addEventListener('DOMContentLoaded', init);
